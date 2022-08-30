@@ -8,5 +8,5 @@ import controller from '../controllers/application_controller'
 
 application.consumer = consumer
 
-StimulusReflex.initialize(application, { controller, isolate: true })
+StimulusReflex.initialize(application, { controller, isolate: true, debug: true })
 CableReady.initialize({ consumer })

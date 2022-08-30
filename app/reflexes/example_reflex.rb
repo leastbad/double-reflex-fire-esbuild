@@ -33,4 +33,10 @@ class ExampleReflex < ApplicationReflex
   #
   # Learn more at: https://docs.stimulusreflex.com/rtfm/reflex-classes
 
+  def poke
+    puts "***** Reflex method hit #{Time.zone.now}"
+
+    morph :nothing
+  end
+
 end
